@@ -1,5 +1,5 @@
 # XMA-personal-notes
-##Co-Pilot for emacs
+## Co-Pilot for emacs
 Install emacs 29:
 ```
 sudo add-apt-repository ppa:ubuntuhandbook1/emacs
@@ -11,7 +11,7 @@ sudo apt install ppa-purge && sudo ppa-purge ppa:ubuntuhandbook1/emacs
 sudo apt remove --autoremove emacs emacs-common
 sudo add-apt-repository --remove ppa:ubuntuhandbook1/emacs
 ```
-##.emacs content
+## .emacs content
 ```
 (setq-default indent-tabs-mode nil)
 
