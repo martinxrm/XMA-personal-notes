@@ -95,5 +95,18 @@ sudo add-apt-repository --remove ppa:ubuntuhandbook1/emacs
   :hook (prog-mode . copilot-mode)  ;; Enable copilot-mode in programming modes
   :bind (("C-c C-c" . copilot-complete)))  ;; Bind key for manually invoking Copilot completion
 ```
-
+## Cop-Pilot Installation
+1. Install Node.js
+report https://nodejs.org/en/download/package-manager
+add following lines to .bashrc:
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+2. in ~/.emacs.d
+`git clone git@github.com:copilot-emacs/copilot.el.git`
+3. Open emacs and install server
+Install the copilot server by `M-x copilot-install-server`.
+Login to Copilot by `M-x copilot-login`. You can also check the status by `M-x copilot-diagnose` (NotAuthorized means you don't have a valid subscription).
 
